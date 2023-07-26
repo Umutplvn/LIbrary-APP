@@ -1,0 +1,41 @@
+.detail{
+    margin-top: 2rem;
+    padding: 2rem;
+    border-radius: 2rem;
+    width: 75vw;
+    display: flex;
+    flex-direction: column;
+    gap: 3rem;
+    background-color: rgb(40, 164, 149);
+}
+
+.detail-active{
+    margin-top: 2rem;
+    padding: 2rem;
+    border-radius: 2rem;
+    width: 75vw;
+    display: flex;
+    flex-direction: column;
+    gap: 3rem;
+    background-color: rgb(10, 84, 75);
+}
+
+.detail-text{
+    color: black;
+}
+
+.detail-text-active{
+    color: white;
+}
+
+
+.main{
+    background-color: rgb(220, 235, 232);
+    height: 100vh;
+}
+
+.main-active{
+    background-color: rgb(68, 105, 96);
+    height: 100vh;
+
+}

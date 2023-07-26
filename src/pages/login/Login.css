@@ -1,0 +1,68 @@
+
+.generel{
+    background-image: url("https://picsum.photos/1200/675");
+    filter: brightness(60%);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    height: 100vh;
+} 
+
+
+.generel-active{
+    background-image: url("https://picsum.photos/1200/675");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    height: 100vh;
+
+} 
+
+
+.login {
+display: flex;
+justify-content: center;
+align-items: center;
+padding-top: 6rem;
+backdrop-filter: blur(30px);
+border-radius: 1rem;
+width: 20rem;
+margin: auto;
+padding: 2rem;
+margin-top: 10em;
+
+}
+
+
+
+.col{
+    display: flex;
+    justify-content: center;
+    margin: 0.5rem;
+}
+
+.login-btn {
+  width: 5rem;
+  border: none;
+  border-radius: 0.5rem;
+  background-color: rgb(125, 167, 167);
+  color: white;
+  font-family: "Pangolin", cursive;
+}
+
+
+input{
+    box-shadow: rgba(17, 17, 26, 0.1) 0px 4px 16px, rgba(17, 17, 26, 0.1) 0px 8px 24px, rgba(17, 17, 26, 0.1) 0px 16px 56px;
+    padding: 0.2rem;
+    width: 16rem;
+    font-family: "Pangolin", cursive;
+    border: none;
+    border-radius: 0.5rem;
+    padding: 0.3rem;
+    
+}
+
+
+.username{
+    padding-top: 0.5rem;
+}

@@ -1,0 +1,23 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+.icon{
+    font-size: 36px;
+    color: black;
+    z-index: 2;
+    position: fixed;
+    left: 35px;
+    bottom: 40px;
+
+}
+
+.sun{
+    font-size: 46px;
+    color: white;
+    z-index: 2;
+    position: fixed;
+    bottom: 35px;
+    left: 30px;
+}

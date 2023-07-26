@@ -1,0 +1,25 @@
+.navbar{
+    font-family: "Pangolin", cursive;
+    padding: 1rem;
+}
+
+.butons{
+    display: flex;
+    gap: 1rem;
+}
+
+
+.linkTo{
+    text-decoration: none;
+    color: black;
+    transition: 0.3s;
+
+}
+
+
+.linkTo:hover{
+   
+        background-color: rgb(49, 176, 134);
+        border-radius: 5px;
+    
+}

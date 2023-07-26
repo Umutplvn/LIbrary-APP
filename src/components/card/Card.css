@@ -1,0 +1,26 @@
+.card{ 
+    text-align: center;
+    width: 20rem;
+    height: 24rem;
+    padding: 1rem;
+    margin: auto;
+    gap: 1rem;
+    
+}
+
+.image{
+    width: 106px;
+    height: 166px;
+    margin: auto;
+}
+
+.card-container{
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1rem;
+}
+
+.card-title{
+    height: 4rem;
+    overflow: scroll;
+}
