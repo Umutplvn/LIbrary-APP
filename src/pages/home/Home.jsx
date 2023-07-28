@@ -16,21 +16,22 @@ const[search, setSearch] = useState("")
 const[data, setData] = useState("" || [])
 const [type, setType] = useState("all")
 const [bg, setBg] = useState("d-show")
-let key = "AIzaSyCcoWRkzQ5nRtrQr8u8FOQ0kx4lgcjvGMM"
 
+let key = process.env.REACT_APP_apiKey;
 
 
 const hadleSubmit =(e)=>{
   e.preventDefault()
-  
   axios.get(`https://www.googleapis.com/books/v1/volumes?q=${search}&printType=${type}&${key}`)
   .then(res => setData(res.data.items))
-
   setBg("d-none")
 }
 
+
 setVeri(data)
 const {icon}= useContext(themeProvider)
+
+
 
 
   return (
@@ -39,7 +40,7 @@ const {icon}= useContext(themeProvider)
       <h2 className={icon ? "header" : "header-active"}>BOOKS OR MAGAZINES</h2>
       <Form onSubmit={hadleSubmit} className="form">
         <Form.Group className="mb-3 search-bar" controlId="formSearch">
-          <Form.Control  onChange={(e)=>setSearch(e.target.value)}  type="input" required  placeholder="Search..." />
+          <Form.Control  onChange={(e)=>setSearch(e.target.value)}  type="search" required  placeholder="Search..." />
           <Form.Select  onChange={(e)=>setType(e.target.value)} defaultValue={(e)=>e.target.value} aria-label="Default select example">
           <option  value="all" >All</option>
           <option value="books">Books</option>
