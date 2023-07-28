@@ -18,6 +18,8 @@ function App() {
   const [veri, setVeri] = useState("");
   const [icon, setIcon] = useState(true);
 
+
+
   return (
     <themeProvider.Provider value={{ icon, setIcon }}>
       <LoginProvider>
@@ -34,8 +36,8 @@ function App() {
             <Route path="detail/:id" element={<PrivateLogin />}>
               <Route path="" element={<Detail veri={veri} />} />
             </Route>
+              <Route path="*" element={<NotFound />} />
 
-            <Route path="*" element={<NotFound />} />
           </Routes>
           <button onClick={() => setIcon(!icon)}>
             {icon ? (
@@ -44,6 +46,8 @@ function App() {
               <HiSun className="sun" />
             )}
           </button>
+
+          
         </BrowserRouter>
       </LoginProvider>
     </themeProvider.Provider>

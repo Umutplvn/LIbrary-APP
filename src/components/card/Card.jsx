@@ -1,8 +1,10 @@
 import { Link } from "react-router-dom";
 import "./Card.css";
+import { useEffect } from "react";
 
 const Card = ({ data }) => {
-  console.log(data);
+
+
   return (
     <div className="card-container">
 
